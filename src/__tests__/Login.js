@@ -52,8 +52,8 @@ describe("Given that I am a user on login page", () => {
     test("Then I should be identified as an Employee in app", () => {
       document.body.innerHTML = LoginUI();
       const inputData = {
-        email: "johndoe@email.com",
-        password: "azerty",
+        email: "employee@test.tld",
+        password: "employee",
       };
 
       const inputEmailUser = screen.getByTestId("employee-email-input");
@@ -163,8 +163,8 @@ describe("Given that I am a user on login page", () => {
       document.body.innerHTML = LoginUI();
       const inputData = {
         type: "Admin",
-        email: "johndoe@email.com",
-        password: "azerty",
+        email: "admin@test.tld",
+        password: "admin",
         status: "connected",
       };
 
